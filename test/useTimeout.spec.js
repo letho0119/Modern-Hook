@@ -23,7 +23,6 @@ describe('useTimeout', () => {
     expect(result.current[0]).to.be.an('boolean');
     expect(result.current[1]).to.be.a('function');
   });
-
   /*it('should delay the execution of the delayed function', async () => {
     const delay = 50;
     const spy = sinon.spy();
@@ -90,6 +89,7 @@ describe('useTimeout', () => {
     const clear = result.current[1];
 
     expect(result.current[0]).to.be.false;
+
     expect(clear).to.be.a('function');
 
     act(clear);
